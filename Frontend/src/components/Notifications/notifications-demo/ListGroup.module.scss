@@ -1,0 +1,88 @@
+@import '../../../styles/app';
+
+.listGroup {
+  display: block;
+  height: 320px;
+  overflow-y: scroll;
+}
+
+.listGroup::-webkit-scrollbar{
+  display: none;
+}
+
+
+.img_sm {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  .status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    border: 0.15em solid $white;
+
+    @include border-radius(50%);
+
+    &.status-bottom {
+      top: auto;
+      left: auto;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.listGroupItem {
+  transition: background-color 0.15s ease-in-out;
+  text-decoration: none;
+  border-left: none;
+  border-right: none;
+  display: block;
+  cursor: pointer;
+
+  :global .progress {
+    transition: background 0.15s ease-in-out;
+
+    &:hover {
+      background: $black;
+    }
+  }
+
+  &:hover {
+    background-color: $list-group-hover-bg;
+
+    :global .progress {
+      background: $white !important;
+    }
+  }
+
+  &:first-child {
+    border-top: none;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.notificationIcon {
+  margin-right: 0.5rem;
+  float: left;
+
+  @include clearfix;
+}
+
+

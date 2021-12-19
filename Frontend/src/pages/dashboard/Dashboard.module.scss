@@ -1,0 +1,128 @@
+@import '../../styles/app';
+
+.root {
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 80%;
+  height: 90%;
+  display: block;
+  // padding-bottom: 10px;
+  padding: 20px;
+  margin-top: -10px;
+  margin-right: 60px;
+  @media (max-width: breakpoint-max(sm)) {
+    padding-right: 15px;
+    margin-top: -90px;
+  }
+  :global {
+    .post-comments footer {
+      margin: 0 (-$widget-padding-horizontal) (-$widget-padding-vertical);
+      padding: $widget-padding-vertical $widget-padding-horizontal;
+    }
+
+    .stat-item .name {
+      margin-top: 10px;
+    }
+
+    .list-group-item:hover {
+      background-color: $bg-addition;
+    }
+
+    .detail {
+      .x_label {
+        background: $widget-bg-color !important;
+      }
+    }
+  }
+}
+
+.root::-webkit-scrollbar {
+  display: none !important;
+}
+
+.table {
+  :global(.table.table-sm) {
+    td {
+      font-size: 1rem;
+      vertical-align: middle;
+    }
+  }
+}
+
+.searchBtn {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.form_control {
+  font-family: $font-family-base;
+  box-shadow: none;
+  transition: border-color ease-in-out 0.15s, background-color ease-in-out 0.15s;
+  background: $bg-custom-dark;
+  border: none;
+  width: 100%;
+  color: rgba(250, 250, 250, 0.6);
+  text-align: left;
+  &:focus {
+    box-shadow: none;
+    background: $bg-custom-dark;
+    outline: none;
+  }
+
+  &.no-border {
+    border: none;
+    background-color: darken($input-bg, 5%);
+
+    &:focus {
+      background-color: darken($input-bg, 7%);
+    }
+  }
+}
+.form_control_sm {
+  height: calc(1.5em + 0.8rem + 2px);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+.profile_title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+// .post_footer > .footer_icon + .footer_icon:before{
+//   color: #999;
+//   content: '\25cf';
+//   margin-right: 20px;
+// }
+
+.join_icon{
+  padding: 0px;
+}
+
+.post_comment {
+  margin-bottom: 0.5rem;
+  margin-left: -20px;
+  margin-right: -20px;
+  font-size: 0.875rem;
+}
+.post_comment > li {
+  padding: 10px;
+  list-style: none;
+}
+.post_comment > li:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.profile_footer {
+  background-color: rgba(0, 0, 0, 0.24);
+  padding: 5px 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.comment_reply:hover {
+  text-decoration: underline;
+}

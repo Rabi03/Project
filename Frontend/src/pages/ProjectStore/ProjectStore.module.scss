@@ -1,0 +1,37 @@
+@import '../../styles/app';
+
+.comment_reply:hover {
+  text-decoration: underline;
+}
+
+.form_control {
+  font-family: $font-family-base;
+  box-shadow: none;
+  transition: border-color ease-in-out 0.15s, background-color ease-in-out 0.15s;
+  background: $bg-custom-dark;
+  border: none;
+  width: 100%;
+  color: rgba(250, 250, 250, 0.6);
+  text-align: left;
+  &:focus {
+    box-shadow: none;
+    background: $bg-custom-dark;
+    outline: none;
+  }
+
+  &.no-border {
+    border: none;
+    background-color: darken($input-bg, 5%);
+
+    &:focus {
+      background-color: darken($input-bg, 7%);
+    }
+  }
+}
+.form_control_sm {
+  height: calc(1.5em + 0.8rem + 2px);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}

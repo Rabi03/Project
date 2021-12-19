@@ -1,0 +1,64 @@
+@import "./Room.css";
+@import "./Sidebar.css";
+@import "./SidebarRoom.css";
+
+body ::-webkit-scrollbar {
+  display: none;
+}
+
+.showNav {
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  width: 70vw;
+  background-color: #212f3d;
+}
+
+.hideNav {
+  position: relative;
+}
+
+/* 
+Color scheme
+#d8e3e7
+#51c4d3
+#126e82
+#132c33
+*/
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+  .room{
+    height:'90%' !important;
+    display: block;
+  }
+  .Announcement-image{
+    width:100vw !important;
+  }
+  .showNav{
+    width:100vw !important;
+  }
+  .room__header{
+    width:100vw !important;
+  }
+
+  .OpenAccouncemnet,.Accouncemnet-card,.Accouncemnet-postcard{
+    width:100vw !important;
+  }
+  .Accouncemnet-postcard{
+    padding-left:10px !important;
+    padding-right: 10px !important;
+  }
+  .Announcement-info{
+    display:none !important;
+  }
+  .room__body{
+    height:65% !important;
+  }
+  .fa-house-user,.fa-github,.fa-tasks{
+    display: flex;
+  }
+}
+

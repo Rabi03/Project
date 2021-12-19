@@ -1,0 +1,21 @@
+@import '../../styles/app';
+
+.card{
+    color: rgba(244,244,245,.9);
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background: rgba(0,0,0,.24);
+}
+
+.card>header {
+    transition: padding .3s linear;
+    padding: 15px 20px 0;
+    color: white;
+    display: flex;
+}
+
+.roomName:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,165 @@
+.room {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  background-color: #212f3d;
+  padding-right: 10px;
+}
+
+.room__header {
+  display: flex;
+  /* min-height: 70px; */
+  padding: 10px 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room__header > .MuiSvgIcon-root {
+  margin: 5px;
+  color: gray;
+}
+
+.room__headerInfo {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.room__headerInfo > h3 {
+  margin-bottom: 3px;
+  font-weight: bold;
+  margin: unset;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 1.5em;
+}
+
+.room__headerInfo > p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: unset;
+}
+
+.room__headerMenu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room__body {
+  flex: 1;
+  background-color: #212f3d;
+  padding: 0.5em;
+  overflow-y: scroll;
+}
+
+.chat__message {
+  box-sizing: unset;
+  position: relative;
+  font-size: 16px;
+  padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  max-width: 30em;
+  margin-bottom: 20px;
+  color: white;
+  overflow-wrap: break-word;
+}
+
+.chat_image {
+  box-sizing: unset;
+  position: relative;
+  font-size: 16px;
+  padding: 0.5em;
+  border-radius: 20px;
+  max-width: 30em;
+  margin-bottom: 2.5em;
+}
+
+.chat_user_image {
+  margin-left: auto;
+  color: white;
+}
+
+.chat__property {
+  position: absolute;
+  width: max-content;
+  font-size: x-small;
+}
+
+.chat__senderProperty {
+  right: 0;
+  margin-right: 5px;
+}
+
+.chat__users {
+  margin-left: auto;
+  background-color: rgb(0, 132, 255);
+  color: white;
+}
+
+.chat__name {
+  top: -15px;
+  font-weight: 700;
+}
+
+.chat__timestamp {
+  bottom: -17px;
+}
+
+.center {
+  text-align: center;
+}
+
+.message-form {
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid #3b2a50;
+  background-color: #040620;
+  margin: 10px 10px;
+  margin-top: 4px;
+}
+
+.message-input {
+  height: 40px;
+  width: calc(100% - 145px);
+  background-color: #040620;
+  border: 0px;
+  padding: 0px 18px;
+  outline: none;
+  font-size: 15px;
+  color: white;
+}
+
+.image-button {
+  cursor: pointer;
+  height: 100%;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.send-button {
+  height: 42px;
+  background-color: white;
+  border: 1px solid white;
+  padding: 0px 18px;
+  cursor: pointer;
+}
+
+.send-icon {
+  top: 1px;
+  position: relative;
+  transform: rotate(-90deg);
+}
+
+.picture-icon {
+  top: 4px;
+  position: relative;
+  font-size: 20px;
+}
+
+.MuiButtonBase-root:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* .MuiPaper-root {
+  color: white !important;
+  /* background-color: #132c33 !important; 
+} */
