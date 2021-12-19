@@ -1,0 +1,26 @@
+{
+  "name": "Backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../Frontend",
+    "clientinstall": "npm install --prefix ../Frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.24.1",
+    "apollo-server-lambda": "^2.25.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.2.0",
+    "graphql": "^15.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.11",
+    "nodemon": "^2.0.14"
+  }
+}
